@@ -4,12 +4,14 @@
     margin: 0;
 }
 
-body {
-    height: 100%;
+html, body {
+    height: 100%; 
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+body {
+    min-height: 100vh;
+    margin-bottom: -12vh;
 }
  /* Header con 3 box */
 header {
@@ -54,10 +56,10 @@ header {
  /* Inizio main con 3 colonne */
 main {
     padding-top: 120px; 
-    width: 100%;
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .container {
@@ -149,6 +151,52 @@ main {
 
 .testotagliato{
     text-decoration: line-through;
+}
+
+.content-wrapper {
+    padding-bottom: 12vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    min-height: calc(100vh - 12vh); 
+    width: 100%; 
+}
+
+/* Footer */
+
+footer{
+    height: 12vh;
+    background-color: #23272A;
+    color: white;
+}
+
+.minibox{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    align-items: center; 
+    justify-content: center;  
+    margin-left: 100px;
+}
+
+.box1, .box2{
+    width: 40%;
+}
+
+.box2{
+  display: flex;
+  align-items: flex-end;  
+  flex-direction: column;
+}   
+
+div.box1>span{
+    margin-right: 5px;
+}
+
+.whiteline{
+    background-color: white;
+    height: 2px;
 }
 
 
