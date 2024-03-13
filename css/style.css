@@ -109,6 +109,10 @@ main {
     line-height: 15px;
 }
 
+.image-container:hover .cuoricino {
+    color: red;
+}
+
 /* riquadro rosso e verde */
 .riquadro{
     position: absolute;
